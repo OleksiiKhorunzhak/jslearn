@@ -53,30 +53,6 @@
 .slider-items {
   z-index: 2;
 }
-
-.my-work-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 15px;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.my-container {
-  position: relative;
-  max-width: 100%;
-}
-
-.rounded {
-  border-radius: 2%;
-}
-
 .fade {
   animation: fade 1s;
   -moz-animation: fade 1s;
