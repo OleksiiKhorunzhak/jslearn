@@ -1,0 +1,67 @@
+.height {
+  min-height: 100vh;
+}
+
+#mousediv {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  z-index: -999;
+  background: rgba(0, 123, 255, 0.21);
+  border-radius: 0 50% 50% 50%;
+  pointer-events: none;
+}
+
+div#Work_1 {
+  position: relative;
+  margin: -1px;
+  z-index: 999;
+  width: 100%;
+  cursor: none;
+}
+
+.height-500 {
+  min-height: 500px;
+}
+
+.my-work-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.my-container {
+  position: relative;
+  max-width: 100%;
+}
+
+body {
+  margin: 0px;
+}
+
+.tack_title {
+  display: block;
+  width: 100%;
+}
+
+.work-field {
+  max-width: 75vw;
+  width: 100%;
+}
+
+.border {
+  border: 1px solid;
+}
+
+.border-dark {
+  border-color: darkgray;
+}

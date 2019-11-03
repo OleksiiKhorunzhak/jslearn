@@ -13,6 +13,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/tack_1.css">
+  <link rel="stylesheet" href="css/tack_2.css">
+  <link rel="stylesheet" href="css/tack_3.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -50,6 +53,59 @@
     </div>
   </div>
 
+  <div class="my-container" id="tack_2">
+    <div class="height my-work-row">
+      <div class="tack_title">
+        <p>Show mouse coordinates in the block</p>
+      </div>
+      <div class="work-field">
+        <p>
+          <span>X: <span id="offx">0</span></span>
+          <span>Y: <span id="offy">0</span></span>
+        </p>
+      </div>
+
+      <div class="work-field height-500 border border-dark" id="Work_1">
+        <div id="mousediv"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="my-container" id="tack_3">
+    <div class="height my-work-row">
+      <div class="tack_title">
+        <p>Slider</p>
+      </div>
+      <div class="slider">
+        <div class="slider-items">
+          <div class="slide fade">
+            <img class="slide_item rounded" src="https://picsum.photos/1000/500?random1" alt="">
+          </div>
+          <div class="slide fade">
+            <img class="slide_item rounded" src="https://picsum.photos/1000/500?random2" alt="">
+          </div>
+          <div class="slide fade">
+            <img class="slide_item rounded" src="https://picsum.photos/1000/500?random3" alt="">
+          </div>
+          <div class="slide fade">
+            <img class="slide_item rounded" src="https://picsum.photos/1000/500?random4" alt="">
+          </div>
+          <div class="slide fade">
+            <img class="slide_item rounded" src="https://picsum.photos/1000/500?random5" alt="">
+          </div>
+          <div class="slide fade">
+            <img class="slide_item rounded" src="https://picsum.photos/1000/500?random6" alt="">
+          </div>
+        </div>
+        <div class="slider-control">
+          <div class="control_arrow prev_arrow"><i class="fas fa-angle-double-left"></i></div>
+          <div class="control_arrow next_arrow"><i class="fas fa-angle-double-right"></i></div>
+        </div>
+        <div class="slider_dots"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
