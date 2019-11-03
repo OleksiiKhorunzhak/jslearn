@@ -1,11 +1,56 @@
-.click_item {
+.click_items {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+  .click_items .click_item {
+    width: 33.3%;
+    margin: 10px 0;
+    position: relative;
+    height: 200px;
+    padding: 0 15px; }
+    .click_items .click_item .click_item_content {
+      display: block;
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      transition: all .4s ease-in; }
+      .click_items .click_item .click_item_content.selected:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: orange;
+        opacity: 0.5;
+        z-index: 1; }
+      .click_items .click_item .click_item_content.selected:after {
+        content: '\2713';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-size: 3rem;
+        color: white; }
+      .click_items .click_item .click_item_content img.my_click {
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    @media screen and (max-width: 767px) {
+      .click_items .click_item {
+        width: 50%;
+        padding: 0 15px; } }
+
+.selected_items {
+  display: block;
+  position: relative;
+  width: 100%;
   text-align: center;
-  width: 33.3%;
-  margin: 10px 0; }
-  .click_item img.rounded.my_click {
-    max-width: 100%; }
-  .click_item .rounded {
-    border-radius: 2%; }
-  .click_item .my_click.selected {
-    border: 1px solid orange;
-    margin: -1px; }
+  margin-top: 50px; }
+  .selected_items p {
+    font-size: 20px; }

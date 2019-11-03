@@ -1,12 +1,6 @@
-#mousediv {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  z-index: -999;
-  background: rgba(0, 123, 255, 0.21);
-  border-radius: 0 50% 50% 50%;
-  pointer-events: none; }
+.work-field {
+  max-width: 75vw;
+  width: 100%; }
 
 div#Work_1 {
   position: relative;
@@ -14,13 +8,15 @@ div#Work_1 {
   z-index: 999;
   width: 100%;
   cursor: none; }
-
-.work-field {
-  max-width: 75vw;
-  width: 100%; }
-
-.border {
-  border: 1px solid; }
-
-.border-dark {
-  border-color: darkgray; }
+  div#Work_1 #mousediv {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    z-index: -999;
+    background: rgba(0, 123, 255, 0.21);
+    border-radius: 0 50% 50% 50%;
+    pointer-events: none; }
+  @media screen and (max-width: 767px) {
+    div#Work_1 {
+      max-width: 85vw; } }

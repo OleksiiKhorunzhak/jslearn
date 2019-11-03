@@ -1,24 +1,44 @@
 body {
-  &.dark{
+  color: #000000;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  &.dark {
     background: #555555;
   }
-  &.ligt{
+
+  &.light {
     background: #f4f4f4;
   }
-  margin: 0px;
+
+  margin: 0;
+
   .my-container {
     position: relative;
     max-width: 100%;
+
     .tack_title {
       display: block;
       width: 100%;
+      text-align: center;
+      color: #fff;
+      background: #555555;
+      margin-bottom: 30px;
+      padding: 15px;
     }
+
     .height-500 {
       min-height: 500px;
     }
+
     .height {
       min-height: 100vh;
     }
+
     .my-work-row {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -33,7 +53,23 @@ body {
       justify-content: center;
     }
 
+    .border {
+      border: 1px solid;
+    }
+
+    .border-dark {
+      border-color: darkgray;
+    }
+
+    .rounded {
+      border-radius: 2%;
+    }
+
   }
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
 }
 
 

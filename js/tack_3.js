@@ -1,4 +1,3 @@
-console.clear();
 
 let slides = document.querySelectorAll('.slide');
 let firstSlide = slides[0];
@@ -11,11 +10,9 @@ let dotsContainer = document.querySelector('.slider_dots');
 for (x = 0; x < totalSlides; x++) {
     slides[x].setAttribute("data-pos", x + 1);
 
-    let dotElement = document.createElement('a');
-    dotElement.setAttribute("href", "#");
+    let dotElement = document.createElement('span');
     dotElement.className = "slider_dot";
     dotElement.setAttribute("data-pos", x + 1);
-
 
     dotsContainer.appendChild(dotElement);
 
